@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/TodoApp/TodoApp.WebUI/bin/Debug/netcoreapp3.0/TodoApp.WebUI.dll",
+            "program": "${workspaceFolder}/UpravaljalecNalog/UpravaljalecNalog.WebUI/bin/Debug/netcoreapp3.0/UpravaljalecNalog.WebUI.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/TodoApp/TodoApp.WebUI",
+            "cwd": "${workspaceFolder}/UpravaljalecNalog/UpravaljalecNalog.WebUI",
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {

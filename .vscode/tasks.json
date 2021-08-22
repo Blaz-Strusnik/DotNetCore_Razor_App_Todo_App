@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/TodoApp/TodoApp.WebUI/TodoApp.WebUI.csproj",
+                "${workspaceFolder}/UpravaljalecNalog/UpravaljalecNalog.WebUI/UpravaljalecNalog.WebUI.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/TodoApp/TodoApp.WebUI/TodoApp.WebUI.csproj",
+                "${workspaceFolder}/UpravaljalecNalog/UpravaljalecNalog.WebUI/UpravaljalecNalog.WebUI.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/TodoApp/TodoApp.WebUI/TodoApp.WebUI.csproj",
+                "${workspaceFolder}/UpravaljalecNalog/UpravaljalecNalog.WebUI/UpravaljalecNalog.WebUI.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
