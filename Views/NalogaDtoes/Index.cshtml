@@ -1,14 +1,17 @@
 ﻿@model IEnumerable<Upravljalec_Nalog.Models.NalogaDto>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Seznam";
 }
 
-<h1>Index</h1>
 
+<div class="text-center mx-auto">
+    <h2 class="mb-4">Seznam nalog</h2>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn-lg btn-primary">Ustvari</a>
 </p>
+</div>
+
 <table class="table">
     <thead>
         <tr>
@@ -24,7 +27,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.KoncniDatum)
             </th>
-            <th></th>
+            <th></th> 
+            <th></th> 
+            <th></th> 
+            <th></th> 
         </tr>
     </thead>
     <tbody>
@@ -43,9 +49,17 @@
                 @Html.DisplayFor(modelItem => item.KoncniDatum)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id"><i class="fas fa-pencil-alt"></i></a> 
+                 
+                
+            </td>
+            
+            <td>
+<a asp-action="Details" asp-route-id="@item.Id"><i class="fas fa-info"></i></a>
+            </td>
+            
+            <td>
+<a asp-action="Delete" asp-route-id="@item.Id"><i class="fas fa-trash-alt"></i></a>
             </td>
         </tr>
 }
