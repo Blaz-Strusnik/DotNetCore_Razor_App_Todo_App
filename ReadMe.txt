@@ -10,9 +10,9 @@ Po tem postopku moraš v DOTNET CLI dodati migracije in posodobiti podtkovno baz
 dotnet ef migrations add CreateIdentitySchema_2 --context Upravljalec_NalogContext
 dotnet ef database update --context Upravljalec_NalogContext
 
---V MSSAL SERVERJU STA ZA APILIKACIJJO UPRAVLJALEC NALOG DVE PODTKOVNI BAZI
---PODATKOVNI BAZI NALOGE SO SHRANJENE SAMO NALOGE
---v PODATKOVNI BAZI UPRAVLJALEC_NALOG SO SHRANJENI ASP_NET_USERS OZIROMA UPORABNIKI
+--V MSSQL SERVERJU STA ZA APILIKACIJO UPRAVLJALEC NALOG DVE PODTKOVNI BAZI
+--PODATKOVNA BAZA NALOGE IMA SHRANJENE SAMO NALOGE
+--V PODATKOVNI BAZI UPRAVLJALEC_NALOG SO SHRANJENI ASP_NET_USERS OZIROMA UPORABNIKI
 
 Po končanem scaffoldanju nastive še stvari ki so v tem posnetku LINK :
 https://www.youtube.com/watch?v=CzRM-hOe35o
