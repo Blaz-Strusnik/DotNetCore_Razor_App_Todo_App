@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NEW__Razor_Upravljalec_nalog.props" />
+</Project>

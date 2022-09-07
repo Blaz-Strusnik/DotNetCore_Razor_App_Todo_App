@@ -1,0 +1,61 @@
+﻿@page
+@model NEW__Razor_Upravljalec_nalog.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NalogaDto[0].Ime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NalogaDto[0].Opis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NalogaDto[0].ZacetniDatum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NalogaDto[0].KoncniDatum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NalogaDto[0].Owner)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.NalogaDto) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Opis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ZacetniDatum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KoncniDatum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Owner)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
