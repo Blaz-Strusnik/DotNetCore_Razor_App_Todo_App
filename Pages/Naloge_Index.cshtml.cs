@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -23,12 +24,12 @@ namespace NEW__Razor_Upravljalec_nalog
 
         public IList<NalogaDto> NalogaDto { get;set; } = default!;
 
-        public async Task OnGetAsync()
+
+        public void OnGet()
         {
-            if (_context.NalogaDto != null)
-            {
-                NalogaDto = await _context.NalogaDto.ToListAsync();
-            }
+            NalogaDto = _context.NalogaDto
+            .Where(t => t.Owner == User!.Identity!.Name).OrderBy(t => t.Ime).ToList();
+            NalogaDto = NalogaDto.ToList();
         }
     }
 }

@@ -12,7 +12,7 @@ namespace NEW__Razor_Upravljalec_nalog
             builder.Services.AddDbContext<NEW__Razor_Upravljalec_nalogContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("NEW__Razor_Upravljalec_nalogContext") ?? throw new InvalidOperationException("Connection string 'NEW__Razor_Upravljalec_nalogContext' not found.")));
 
-                        builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                        builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<NEW__Razor_Upravljalec_nalogContext>();
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
             // Add services to the container.

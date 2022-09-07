@@ -23,7 +23,7 @@ namespace NEW__Razor_Upravljalec_nalog.Data
                     Opis = "Dokončaj C# Todo app za seminarsko nalogo pri predmetu Programiranje Spremenjena",
                     ZacetniDatum  = DateTime.ParseExact("2021-11-3 09:00","yyyy-M-d HH:mm",null),
                     KoncniDatum  = DateTime.ParseExact("2021-12-27 09:00","yyyy-M-d HH:mm",null),
-                    Owner = null
+                    Owner = "a@a.a"
                 },
                 new NEW__Razor_Upravljalec_nalog.Model.NalogaDto
                 {
@@ -31,7 +31,7 @@ namespace NEW__Razor_Upravljalec_nalog.Data
                     Opis = "Seznanitev kandidatov z uspehom pri poklicni maturi",
                     ZacetniDatum  = DateTime.ParseExact("2022-9-9 09:00","yyyy-M-d HH:mm",null),
                     KoncniDatum  = DateTime.ParseExact("2022-9-9 09:00","yyyy-M-d HH:mm",null),
-                    Owner = null
+                    Owner = "a@a.a"
 
                 },
                 new NEW__Razor_Upravljalec_nalog.Model.NalogaDto
@@ -40,7 +40,7 @@ namespace NEW__Razor_Upravljalec_nalog.Data
                     Opis = "Ustni izpiti in 4.predmet. zagovor projektne naloge",
                     ZacetniDatum  = DateTime.ParseExact("2022-8-24 09:00","yyyy-M-d HH:mm",null),
                     KoncniDatum  = DateTime.ParseExact("2022-9-3 09:00","yyyy-M-d HH:mm",null),
-                    Owner = null
+                    Owner = "b@b.b"
 
         },
                 new NEW__Razor_Upravljalec_nalog.Model.NalogaDto
@@ -49,7 +49,7 @@ namespace NEW__Razor_Upravljalec_nalog.Data
                     Opis = "PM pisni del Računalništvo",
                     ZacetniDatum  = DateTime.ParseExact("2022-8-31 09:00","yyyy-M-d HH:mm",null),
                     KoncniDatum  = DateTime.ParseExact("2022-8-31 09:00","yyyy-M-d HH:mm",null),
-                    Owner = null
+                    Owner = "b@b.b"
                 },
                 new NEW__Razor_Upravljalec_nalog.Model.NalogaDto
                 {
@@ -57,7 +57,7 @@ namespace NEW__Razor_Upravljalec_nalog.Data
                     Opis = "PM pisni del angleščina",
                     ZacetniDatum  = DateTime.ParseExact("2022-8-27 09:00","yyyy-M-d HH:mm",null),
                     KoncniDatum  = DateTime.ParseExact("2022-8-27 09:00","yyyy-M-d HH:mm",null),
-                    Owner = null
+                    Owner = "b@b.b"
                 },
                 new NEW__Razor_Upravljalec_nalog.Model.NalogaDto
                 {
@@ -65,7 +65,7 @@ namespace NEW__Razor_Upravljalec_nalog.Data
                     Opis = "PM pisni del slovenščina",
                     ZacetniDatum  = DateTime.ParseExact("2022-8-24 09:00","yyyy-M-d HH:mm",null),
                     KoncniDatum  = DateTime.ParseExact("2022-8-24 09:00","yyyy-M-d HH:mm",null),
-                    Owner = null
+                    Owner = "a@a.a"
                 },
                 new NEW__Razor_Upravljalec_nalog.Model.NalogaDto
                 {
@@ -73,7 +73,7 @@ namespace NEW__Razor_Upravljalec_nalog.Data
                     Opis = "Zadnji rok za oddajo POM projektne naloge",
                     ZacetniDatum  = DateTime.ParseExact("2022-8-10 09:00","yyyy-M-d HH:mm",null),
                     KoncniDatum  = DateTime.ParseExact("2022-8-10 09:00","yyyy-M-d HH:mm",null),
-                    Owner = null
+                    Owner = "a@a.a"
                 },
                 new NEW__Razor_Upravljalec_nalog.Model.NalogaDto
                 {
@@ -81,7 +81,7 @@ namespace NEW__Razor_Upravljalec_nalog.Data
                     Opis = "Zadnji rok za prijavo k poklicni maturi",
                     ZacetniDatum  = DateTime.ParseExact("2022-7-7 09:00","yyyy-M-d HH:mm",null),
                     KoncniDatum  = DateTime.ParseExact("2022-7-7 09:00","yyyy-M-d HH:mm",null),
-                    Owner = null
+                    Owner = "b@b.b"
                 }
             };
             foreach (NEW__Razor_Upravljalec_nalog.Model.NalogaDto n in naloge)
