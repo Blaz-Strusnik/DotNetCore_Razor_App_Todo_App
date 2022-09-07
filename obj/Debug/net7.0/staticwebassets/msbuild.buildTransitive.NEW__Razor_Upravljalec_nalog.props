@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\NEW__Razor_Upravljalec_nalog.props" />
-</Project>
