@@ -28,6 +28,9 @@ namespace NEW__Razor_Upravljalec_nalog
         public void OnGet()
         {
             NalogaDto = _context.NalogaDto
+            //You have to convert your IQueryable to a List. You can do this by adding .ToList() at the end of
+            //your Linq query.
+            //Also change the type as <Lease>. Try this query instead,
             .Where(t => t.Owner == User.Identity.Name).OrderBy(t => t.Ime).ToList();
             NalogaDto = NalogaDto.ToList();
         }
