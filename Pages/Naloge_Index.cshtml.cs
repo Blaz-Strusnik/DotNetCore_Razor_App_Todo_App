@@ -28,7 +28,7 @@ namespace NEW__Razor_Upravljalec_nalog
         public void OnGet()
         {
             NalogaDto = _context.NalogaDto
-            .Where(t => t.Owner == User!.Identity!.Name).OrderBy(t => t.Ime).ToList();
+            .Where(t => t.Owner == User.Identity.Name).OrderBy(t => t.Ime).ToList();
             NalogaDto = NalogaDto.ToList();
         }
     }
